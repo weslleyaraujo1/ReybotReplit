@@ -4,8 +4,8 @@
 
 ![Reybot](/groupPict.jpeg)
 
-Play on Replit
-[![Play on Replit](https://img.shields.io/badge/Play%20on-Replit-blueviolet?logo=replit)](https://www.replit.com/@bayumahadika/WaBroadcastReplit)
+[Play on Replit](https://www.replit.com/@bayumahadika)
+[![Play on Replit](https://img.shields.io/badge/Play%20on-Replit-blueviolet?logo=replit)](https://www.replit.com/@bayumahadika/ReybotReplit)
 
 ## Social media
 
