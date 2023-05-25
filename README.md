@@ -1,11 +1,4 @@
 <div align="center">
-<style>
-    .badges-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* Jarak antara badge, sesuaikan dengan kebutuhan Anda */
-    }
-</style>
 
 # ReybotReplit
 
@@ -16,10 +9,8 @@ Play on Replit
 
 ## Social media
 
-<div class="badges-container">
 [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@bayumahadika)
 [![Tiktok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@bayumahadika)
-</div>
 
 ## Connect with me
 
