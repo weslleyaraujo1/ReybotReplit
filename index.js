@@ -11,7 +11,6 @@ const memory = makeInMemoryStore({
 });
 */
 const logging = require("./lib/logging");
-const saveUsers = require("./lib/saveUsers");
 
 const connectReybotWhatsapp = async () => {
   const { state, saveCreds } = await useMultiFileAuthState(
@@ -30,18 +29,9 @@ const connectReybotWhatsapp = async () => {
     if (msg.key.remoteJid === "status@broadcast") return;
     const isGroup = msg.key.remoteJid.endsWith("@g.us");
     require("./handler/messages")({ reybot, msg, isGroup });
-    if (isGroup) {
-      const userId = msg.key.participant || msg.messageStubType[0];
-      saveUsers({ userId });
-    } else {
-      const userId = msg.key.remoteJid;
-      saveUsers({ userId });
-    }
   });
   reybot.ev.on("group-participants.update", (g) => {
-    const userId = g.participants[0];
     require("./handler/groups")({ reybot, g });
-    saveUsers({ userId });
   });
   reybot.ev.on("call", (c) => {
     require("./handler/calls")({ reybot, c });
